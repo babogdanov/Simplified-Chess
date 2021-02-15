@@ -1,3 +1,5 @@
+**You can find all the source code in Chess.cpp, and you can test the game through Simplified_Chess.exe.**
+
 This is the first version of Chess I've done. It was my course project for Introduction to Programming and it's a great example of a lack of coding practices.
 The task was to create a simplified chess game with 4 pieces- 1 white king, 1 black king and 2 white rooks. 
 The board is a square with variable size and the pieces are generated on random squares.
@@ -9,3 +11,5 @@ There is barely any structure to it- it's functions calling each other chaotical
 the code is closed for any extension or modification and there is a bunch of hard to trace dependencies everywhere.
 Still, I was very proud of it when I completed it as it's robust and bug-free and I wrote it all on my own.
 It also motivated me to eventually write a better version when I gained enough knowledge.
+
+
