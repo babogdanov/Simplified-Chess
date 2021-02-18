@@ -199,6 +199,11 @@ newGame:
 						moveCounter++;
 						break;
 					}
+					else
+					{
+						cout << "Invalid move." << endl;
+						continue;
+					}
 					
 				}
 				
