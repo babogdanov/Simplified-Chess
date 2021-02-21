@@ -1,7 +1,23 @@
 # Simplified Chess
 
-**You can find all the source code in Chess.cpp, and you can test the game through Simplified_Chess.exe.**
+**Motivation/ Task specification**
 
-**Motivation**
+This was my Introduction to Programming course project assignment. The task was to design a simplified chess game with 4 pieces- 1 white king, 1 black king and 2 white rooks. The board is a square with variable size and the pieces are generated on random squares. The user plays with the white pieces and there is a primitive bot playing with the black pieces. The bot's behaviour was not specified but I created some simple logic- if it can capture one of the opponent's rooks, it does that and if it can't, it picks a legal move at random. The game is to be played by the player until it reaches 1 of its 3 possible conclusions- the player checkmates the enemy king, the player loses both of his rooks resulting in draw by insuficcient material, or the player leaves no squares for the enemy king to move, while the enemy king is not in check (results in draw by stalemate).
 
-I wrote this version of chess back in 2019. It was my course project for Introduction to Programming and it's a great example of trying to create a complex program without knowing about good coding practices. The task was to create a simplified chess game with 4 pieces- 1 white king, 1 black king and 2 white rooks. The board is a square with variable size and the pieces are generated on random squares. The user plays with the white pieces and there is a primitive bot playing with the black pieces. Its decision making is very simple- if it can capture one of the opponent's rooks it does that and if it can't it picks a legal move at random. I started working on it before learning the first thing about OOP or even the existence of classes in C++, my knowledge of the STL was very limited at the time and we weren't allowed to use anything we didn't fully understand yet. There is barely any structure to it- it's functions calling each other chaotically, the code is closed for any extension or modification and there is a bunch of hard to trace dependencies everywhere. Still, I was very proud of it when I completed it as it's robust and bug-free and I wrote it all on my own. It also motivated me to eventually write a better version when I gained enough knowledge.
+**Technologies used**
+
+C++ was the obligatory language for the project (or rather C given my knowledge at the time).
+
+**Features**
+
+The visual representation of the board is in the console. Dashes(-) denote the empty squares, K is the player's king, P is the enemy king, 1 and 2 are the player's rooks. Moving a piece is done one step at a time- first the symbol of the piece is inputted, then the row and the column to which the player wants to move it. Validation of the input is implemented- the game will prompt for input, until it receives a valid input which is also a legal move. The game carries on until 1 of the 3 endings mentioned above is reached. 
+
+**How to use**
+
+You can find all the source code in Chess.cpp and compile it if you want to, or you can test the game through Simplified_Chess.exe.
+
+**Problems with the design and implementation**
+
+I lacked any knowledge about OOP, efficient design or good good coding practices when I started working on the project- the result is unreadable spaghetti code full of bad design choices. It wasn't really pleasant creating it this way, but I am still proud of it as I managed to make it robust and bug-free on my own. It also motivated me to start working on better versions when I gain enough knowledge.
+
+
