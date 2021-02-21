@@ -1,4 +1,4 @@
-#Simplified Chess
+# Simplified Chess
 
 **You can find all the source code in Chess.cpp, and you can test the game through Simplified_Chess.exe.**
 
